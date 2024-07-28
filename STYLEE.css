@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+:root {
+    --color1: #F39DE5;
+    --color2: #9B77DA;
+    --color3: #4E6B9F;
+    --color4: #6FA5B1;
+    --white: #fff;
+    --black: #000;
+}
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 10fr 1fr;
+    background: linear-gradient(45deg, var(--color1), var(--color2));
+}
+main {
+    grid-area: 2 / 2 / 1 span / 10 span;
+    display: flex;
+    flex-flow: column;
+    gap: 1.25em;
+    border: 0.25em solid var(--color3);
+    border-radius: 2em;
+    box-shadow: 0.5em 0.5em 0.1em var(--black);
+    padding: 2.5em;
+    background: var(--white);
+    min-height: 100svh;
+}
+.information {
+    display: flex;
+    gap: 1.25em;
+    align-items: center;
+}
+.information > img {
+    border-radius: 1.5em;
+}
+.info-wraper {
+    display: flex;
+    flex-flow: column;
+    gap: 1.25em;
+}
+.name {
+    font-size: 2em;
+    font-weight: 700;
+}
+.phone-number {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.address {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.edu-info {
+    display: flex;
+    flex-flow: column;
+    gap: 1.25em;
+}
+.edu-info > h2 {
+    font-size: 3em;
+    font-weight: 600;
+}
+.edu-degree {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.skills {
+    display: flex;
+    flex-flow: column;
+    gap: 1.25em;
+}
+.skills > h3 {
+    font-size: 2.5em;
+    font-weight: 500;
+}
+.skills ul {
+    list-style-position: inside;
+    display: flex;
+    flex-flow: column;
+    gap: 0.5em;
+    font-size: 1.5em;
+}
+.experience > h4 {
+    font-size: 2.5em;
+    font-weight: 500;
+}
+.experience {
+    list-style-position: inside;
+    display: flex;
+    flex-flow: column;
+    gap: 0.5em;
+    font-size: 1.5em;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.my-float{
+	margin-top:16px;
+}
+.fb {
+    position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:140px;
+	background-color:#00aeff;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
